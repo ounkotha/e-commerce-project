@@ -5,7 +5,9 @@ import org.asha.springboot.repository.ProductRepository;
 import org.asha.springboot.service.ProductServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Arrays;
@@ -15,7 +17,8 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-@SpringBootTest(classes = ApiSpringbootApplication.class)
+//@SpringBootTest(classes = ApiSpringbootApplication.class)
+@ExtendWith(MockitoExtension.class)
 public class ProductServiceTest {
 
     @Mock
